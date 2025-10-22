@@ -1,0 +1,12 @@
+{
+    "name": "BusyBox Emscripten Build",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "devuser",
+    "appPort": [8080],
+    "runArgs": [
+      "--network", "host"
+    ],
+    "postCreateCommand": "chmod +x /workspaces/emscripten-web-terminal/run.sh"
+}
