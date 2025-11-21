@@ -8,5 +8,5 @@
     "runArgs": [
       "--network", "host"
     ],
-    "postCreateCommand": "chmod +x /workspaces/emscripten-web-terminal/run.sh"
+    "postCreateCommand": "sudo chown -R devuser:devuser ${containerWorkspaceFolder} && chmod +x ${containerWorkspaceFolder}/run.sh"
 }
